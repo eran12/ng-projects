@@ -1,0 +1,25 @@
+export class ScattegoriesTable {
+  animals: string = null;
+  art: string = null;
+  careers: string = null;
+  clothing: string = null;
+  television: string = null;
+  movies: string = null;
+  sports: string = null;
+  food: string = null;
+  gardening: string = null;
+  geography: string = null;
+  history: string = null;
+  holidaysAndCelebrations: string = null;
+  homeFurnishings: string = null;
+  language: string = null;
+  words: string = null;
+  literature: string = null;
+  mathematics: string = null;
+  music: string = null;
+  science: string = null;
+  technology: string = null;
+  tools: string = null;
+  toysAndGames: string = null;
+  transportation: string = null;
+}

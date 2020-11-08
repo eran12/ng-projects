@@ -1,0 +1,22 @@
+<div class="row">
+  <div class="col-3">
+  <button type="button"
+          class="btn btn-light"
+          (click)="isAddingRowsEditable = !isAddingRowsEditable">
+    {{!isEditable ? 'Enable' : 'Disabled'}} Rows Adding/Deleting
+  </button>
+  </div>
+  <div class="col-3">
+  <button type="button"
+          class="btn btn-light"
+          (click)="saveTable()">
+    Save Table Data
+  </button>
+  </div>
+</div>
+<lib-dynamic-table [tableRows]="rows"
+                   [inputsDisable]="!isEditable"
+                   [showEditButtons]="isAddingRowsEditable"></lib-dynamic-table>
+<div class="row">
+  {{rows | json}}
+</div>
